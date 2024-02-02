@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  position: relative;
+}
+
+.wiki-link {
+  display: block;
+  margin: 20px;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 400px;
+}
+
+.pokemon_image {
+  position: absolute;
+  left: 50%;
+  bottom: 55%;
+  transform: translate(-63%, 20%);
+  height: 20%;
+}
+
+.pokemon_data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54%;
+  right: 25%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon_name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.form_pokemon_search {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 14%;
+}
+
+.input_search_pokemon {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 6px 0 #333
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border-radius: 5px;
+  border: 2px solid #000;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  background-color: #444;
+  color: #fff;
+  box-shadow: -2px 3px 0px 0px #222, -4px 6px 0 0 #000;
+}
+
+.button_wiki {
+  width: 5rem;
+  padding: 2%;
+  border-radius: 5px;
+  border: 2px solid #000;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  background-color: #444;
+  color: #fff;
+  box-shadow: -2px 3px 0px 0px #222, -4px 6px 0 0 #000;
+}
+
+.button_wiki a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:active, .button_wiki:active {
+  box-shadow: -4px 4px 0px 0px #222 inset; 
+  font-size: 0.9rem;
+}
+
+
